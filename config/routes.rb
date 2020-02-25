@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   # Task CRUD
   # Read (all)
   get 'tasks',     to: 'tasks#index'
+  # Create a new task
+  get 'tasks/new', to: 'tasks#new', as: :new_task
   # Read (one)
   get 'tasks/:id', to: 'tasks#show', as: :task
 end
