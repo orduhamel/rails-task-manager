@@ -1,6 +1,7 @@
 <h1>Create a new task</h1>
 
-<!-- Formulaire de creation -->
+<%= render 'form', task: @task %>
+<!-- Formulaire de creation
 <%= form_for(@task) do |f| %>
   <%= f.label :title %>
   <%= f.text_field :title %>
@@ -13,3 +14,4 @@
 
   <%= f.submit %>
 <% end %>
+-->
